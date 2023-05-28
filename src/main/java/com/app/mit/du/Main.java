@@ -1,5 +1,6 @@
 package com.app.mit.du;
 
+import com.app.mit.du.db.DBConnection;
 import com.app.mit.du.posts.Post;
 import com.app.mit.du.services.SocialMediaApp;
 import com.app.mit.du.user.RegularUser;
@@ -53,6 +54,9 @@ public class Main {
 		post1.unlike();
 		post2.unlike();
 		post3.unlike();
+
+//		DBConnection dbConnection = new DBConnection();
+//		dbConnection.getFileFromResources();
 
 	}
 }

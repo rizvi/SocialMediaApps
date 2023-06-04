@@ -10,7 +10,12 @@ public class RegularUser extends User {
 		this.username = username;
 		this.password = password;
 	}
-
+	public RegularUser(String id, String username, String password) {
+		super(id, username, password);
+		this.id = id;
+		this.username = username;
+		this.password = password;
+	}
 	@Override
 	public void displayProfile() {
 
@@ -20,7 +25,13 @@ public class RegularUser extends User {
 
 	}
 
-	public String getUsername() {
-		return username;
+	@Override
+	public String toString() {
+		return "RegularUser{" +
+				"posts=" + posts +
+				", id='" + id + '\'' +
+				", username='" + username + '\'' +
+				", password='" + password + '\'' +
+				'}';
 	}
 }
